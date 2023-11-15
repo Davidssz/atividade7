@@ -35,19 +35,19 @@ public class Empregado {
 		this.salario = salario;
 }
 
-	public double calcularIrpf() {
-		double aux;
-		if  (salario < 1800) {
-		aux = 0.1 * salario;
-		} else {
-			aux=  0.27 * salario;
+public double calcularIrpf() {
+	double imposto;
+	if (salario < 1800) {
+		imposto = 0.1 * salario;
+	} else {
+		imposto = 0.27 * salario;
 	}
-	return (aux);
+	return imposto;
 }
 
-	public double (calcularInss) {
-		return (0.11 * salario);
-  }
+public double calcularInss() {
+	return 0.11 * salario;
+}
 
 }
  
