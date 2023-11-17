@@ -49,5 +49,11 @@ public double calcularInss() {
 	return 0.11 * salario;
 }
 
+public void print() {
+	System.out.println("Nome: " + getNome());
+	System.out.println("EnderecoNome: " + getEndereco());
+	System.out.println("Salario: " + getSalario());
+}
+
 }
  
